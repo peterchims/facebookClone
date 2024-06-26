@@ -74,3 +74,25 @@
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat/Montserrat-Thin.ttf');
 }
+#blue{
+    background: linear-gradient(90deg, #124683, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+#red{
+    background: linear-gradient(90deg, #ff3b3b, #fff9fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+#fb-blue{
+    background: linear-gradient(90deg, #5897e9, #fff9fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    color:#5890FF;
+}
