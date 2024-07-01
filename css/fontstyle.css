@@ -96,15 +96,3 @@
     text-fill-color: transparent;
     color:#5890FF;
 }
-.user-login {
-    background-color:rgb(128, 43, 43);
-    padding:10px;
-    border-radius:60%;
-    color:#fff;
-    position: absolute;
-    right:8px;
-
-}
-.user-login i{
-    font-size:25px;
-}
