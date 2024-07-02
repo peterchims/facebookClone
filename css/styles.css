@@ -156,9 +156,8 @@ color:#fff;
    .container {
     display: flex;
     justify-content: space-between; 
-  
-    background-color: #f0f0f0;
-}
+    background-color: #131313;
+   }
 
 .left-sidebar {
     width: 15%; 
@@ -168,9 +167,9 @@ color:#fff;
 }
 /*  Main Content Styling */
 .main-content {
-    width: 65%; 
+    width: 40%; 
     padding: 20px;
-    background-color: #131313;
+    /* background-color: #131313; */
     text-align: center;
 }
 .story-gallery{
@@ -194,7 +193,7 @@ margin-bottom:20px;
     justify-content: center;
     align-items: center;
     bottom:30px;
-    left: 80px;
+    left: 45px;
     border-radius:50%;
     background: #1876f2;
 color:#fff;
@@ -242,11 +241,11 @@ cursor:pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 202px;
+    bottom: 110px;
     border-radius:50%;
     background: #1876f2;
     width:40%;
-    height:90px;
+    height:60px;
     z-index:1;
     border:5px solid #f7f7f7;
 }
@@ -279,11 +278,11 @@ cursor:pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 202px;
+    bottom: 110px;
     border-radius:50%;
     background: #1876f2;
     width:40%;
-    height:90px;
+    height:60px;
     z-index:1;
     border:5px solid #f7f7f7;
 }
@@ -315,11 +314,11 @@ cursor:pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 202px;
+    bottom: 100px;
     border-radius:50%;
     background: #1876f2;
     width:40%;
-    height:90px;
+    height:60px;
     z-index:1;
     border:5px solid #f7f7f7;
 }
@@ -351,10 +350,11 @@ cursor:pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 202px;
+    bottom: 100px;
     border-radius:50%;
+    background: #1876f2;
     width:40%;
-    height:90px;
+    height:60px;
     z-index:1;
     border:5px solid #f7f7f7;
 }
@@ -377,7 +377,7 @@ cursor:pointer;
     padding:14px;
     border-radius: 50%;
     position: absolute;
-    bottom:135px;
+    bottom:65px;
     right:10px;
 }
 .story-4 .nav-icon i{
@@ -387,6 +387,91 @@ cursor:pointer;
 .story-4 .nav-icon:hover{
     background-color:#1876f2;
     transition: ease-in 0.2s;
+}
+.main-content .upload-content {
+    background-color: rgb(34, 33, 33);
+    border-radius: 10PX;
+    height: 17vh;
+    width:100%;
+    padding-top:20px;
+}
+
+.main-content .upload-content .upload-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+
+.main-content .upload-content  .upload-container span img{
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    margin-left:20px;
+}
+ #input-text{
+border-radius:25px;
+padding:25px;
+background-color: rgb(56, 55, 55);
+width:190%;
+height:40px;
+color:#fff;
+margin-left:10px;
+margin-right:40px;
+border:0px;
+}
+#input-text::placeholder{
+color:#fff;
+font-weight: bolder;
+font-size:1.2em;;
+}
+.upload-content .upload-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+}
+.upload-content .upload-links ul{
+    padding: 30px;
+}
+.upload-content .upload-links ul li{
+display: inline-block;
+
+}
+.upload-content .upload-links ul li a{
+    color: #fff;
+    padding: 30px;
+    text-decoration: none;
+    
+}
+.upload-content .upload-links ul li a .livevideo{
+    position: relative;
+    right: 75px;;
+    bottom:20px;
+    font-weight: bolder;
+    font-size:1.1em;
+}
+.upload-content .upload-links ul li a .photo{
+    position: relative;
+    left: 45px;;
+    bottom:20px;
+    font-weight: bolder;
+    font-size:1.1em;
+}
+.upload-content .upload-links ul li a .feeling{
+    position: relative;
+left: 120px;;
+    bottom:20px;
+    font-weight: bolder;
+    font-size:1.1em;
+}
+.upload-content .upload-links ul li:hover{
+    background-color: red;
+    border-radius: 10px;
+    transition: ease 1s;
 }
 .content-links ul{
     list-style-type:none;
@@ -399,6 +484,30 @@ cursor:pointer;
     padding-top:10px;
     padding-bottom:10px;
     border-radius:5px;
+}
+.upload-content .upload-links .fa-video{
+    color:red;
+    font-size:30px;
+    position: absolute;
+   left:75px;
+    top:36px;
+   
+}
+.upload-content .upload-links .fa-photo-film{
+    color:rgb(9, 160, 29);
+    font-size:30px;
+    position: relative;
+    right:50px;
+    bottom:-5px;
+   
+}
+.upload-content .upload-links .fa-face-smile{
+    color:rgb(223, 209, 25);
+    font-size:30px;
+    position: relative;
+    left:20px;
+   top:5px;
+   
 }
 .content-links a{
     text-decoration: none;
