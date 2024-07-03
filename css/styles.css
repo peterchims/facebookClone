@@ -122,6 +122,18 @@ color:#fff;
     bottom:1px;
     right:7px
    }
+   .settings-menu{
+    position: absolute;
+    width: 90%;
+    max-width: 350px;
+    height: 500px;
+    background: #202020;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 80px;
+    right: 5%;
+   }
    .user-login {
     background-color:rgb(100, 135, 189);
     padding:10px;
@@ -542,13 +554,51 @@ right: 20px;;
     background: rgb(214, 214, 214);
     font-weight: 100;
     position: relative;
-    top: 20px;
+    bottom: 5px;
 }
+.post-container .like-indicators{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: left;
+    position: relative;
+    bottom: 20px;
+}
+.post-container .like-indicators span p a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+.post-container .like-indicators .icons a{
+padding: 2px;
+text-decoration: none;
+color: #0e0d0d;
+}
+.post-container .like-indicators .icons .fa-heart{
+    color:red
+}
+.post-container .like-indicators .icons .fa-thumbs-up{
+    color:rgb(0, 89, 255)
+}
+.post-container .comments-indicators{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    position: relative;
+    bottom: 20px;
+}
+.post-container .comments-indicators a{
+    padding: 2px;
+    text-decoration: none;
+    color: #0e0d0d;
+    font-weight:900;
+    }
 .post-container .post-hr-bottom{
     background: rgb(214, 214, 214);
     font-weight: 100;
     position: relative;
-    bottom:10px;
+    bottom:40px;
 }
 .post-container .left-icons{
     display: flex;
@@ -557,6 +607,19 @@ right: 20px;;
     position: relative;
     bottom: 55px;
  left: 550px;
+}
+.load-more-btn{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #9a9a9a;
+    color:#030303;
+    background-color:#efefee;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.1em;
 }
 .post-container .left-icons .fa-ellipsis{
     font-size: 1.5em;
@@ -582,11 +645,25 @@ right: 20px;;
     color: #fff;
    
 }
+.post-container .view-more{
+   display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+.post-container .view-more a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bolder;
+    
+}
 .post-activity {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
     width: 100%;
+    position: relative;
+    bottom: 28px;
 }
 .post-activity span a{
  text-decoration: none;
