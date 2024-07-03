@@ -518,8 +518,9 @@ right: 20px;;
 .post-text{
     color:#000;
     text-align:left;
-    margin-top:10px;
-    margin-left:20px;
+    position: relative;
+    left: 30px;
+    bottom: 40px;
 }
 .post-text span{
     color:#050607; 
@@ -532,9 +533,10 @@ right: 20px;;
 }
 .post-img{
     width:100%;
-    margin-top:20px;
     border-radius:5px;
-    height:350px;
+    height:300px;
+    position: relative;
+    bottom: 30px;
 }
 .post-container .post-hr-top{
     background: rgb(214, 214, 214);
@@ -547,6 +549,38 @@ right: 20px;;
     font-weight: 100;
     position: relative;
     bottom:10px;
+}
+.post-container .left-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    position: relative;
+    bottom: 55px;
+ left: 550px;
+}
+.post-container .left-icons .fa-ellipsis{
+    font-size: 1.5em;
+    padding: 10px;
+    transition: ease-out 0.4s;
+}
+.post-container .left-icons .fa-ellipsis:hover {
+    padding: 10px;
+    background-color: #626262;
+    border-radius: 20px;
+    color: #fff;
+   
+}
+.post-container .left-icons .fa-xmark{
+    font-size: 1.5em;
+    padding: 10px;
+    transition: ease-out 0.4s;
+}
+.post-container .left-icons .fa-xmark:hover {
+    padding: 10px;
+    background-color: #626262;
+    border-radius: 20px;
+    color: #fff;
+   
 }
 .post-activity {
     display: flex;
@@ -617,12 +651,17 @@ right: 20px;;
     color:rgb(7, 6, 6);
     font-size:1.2em;
     font-weight: 600;
-    margin-bottom: -5px;
-    margin-left:10px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    
 }
 .user-profile small{
     color:#626262;
     font-weight:600;
+    text-align: left;
+    position: relative;
+    right: 145px;
 }
 .upload-content .upload-links .fa-photo-film{
     color:rgb(9, 160, 29);
