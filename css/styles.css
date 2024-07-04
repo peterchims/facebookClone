@@ -126,6 +126,48 @@ color:#fff;
     padding-left: 23px;
     background: #000;
    }
+   .Menu-links{
+    position: absolute;
+    width: 50%;
+    max-width: 600px;
+    height: 850px;
+    background: #bebebe;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 80px;
+    right: 1%;
+    z-index: 2;
+    max-height: 500;
+    transition: max-height 0.3s;
+   }
+   .Menu-links header{
+    padding: 10px;
+   }
+   .Menu-links header h1{
+    color: red;
+    font-family: 'Roboto';
+   }
+   .Menu-links .menu-container{
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100vh;
+   }
+   .Menu-links .menu-container .menu-left-sidebar{
+    background-color: green;
+    width: 60%;
+    border-radius: 3px;
+   }
+   .Menu-links .menu-container .menu-right-sidebar{
+    background-color: rgb(23, 0, 128);
+    width: 32%;
+    border-radius: 3px;
+    position: relative;
+    top: 30px;
+    right: 10px;
+   }
    .settings-menu{
     position: absolute;
     width: 90%;
@@ -159,9 +201,6 @@ color:#fff;
     padding-bottom: 10px;
    }
    .settings-ling:hover{
-    /* padding-top: 10px; */
-
-    /* padding-right: 100px; */
     width: 500%;
     background-color: rgb(49, 47, 47);
     transition: 0.8s;
@@ -173,11 +212,6 @@ color:#fff;
     padding-bottom: 10px;
     
    }
-/* .profile-link:hover{
-    background-color: #424141;
-   
-    padding-top: 10px;
-    padding-bottom: 10px;} */
    .settings-menu .settings-user-profile i{
     border-radius:50%;
     background-color:#000;
@@ -633,7 +667,7 @@ right: 20px;;
     padding-bottom:10px;
     border-radius:5px;
 }
-.upload-content .upload-links .fa-video{
+.upload-content .upload-links .fa-video-slash{
     color:red;
     font-size:30px;
     position: absolute;
