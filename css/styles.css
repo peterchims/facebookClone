@@ -128,10 +128,12 @@ color:#fff;
    }
    .Menu-links{
     position: absolute;
-    width: 50%;
-    max-width: 600px;
-    height: 850px;
-    background: #bebebe;
+    width: 60%;
+    max-width: 500px;
+    height: 450x;
+    padding-bottom: 40px;
+    background: #383737;
+    /* background: #818181; */
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     border-radius: 4px;
     overflow: hidden;
@@ -141,33 +143,93 @@ color:#fff;
     max-height: 500;
     transition: max-height 0.3s;
    }
+   .menu-container{
+    padding-left: 40px;
+   }
+   .menu-settings-links{
+    position:relative;
+    bottom:3px;
+    padding: 17px;
+    margin-bottom: 0px;
+  }
+  .menu-icons{
+    background-color: rgb(240, 240, 240);
+    color: rgb(3, 3, 3);
+    font-size:1em;
+    padding: 10px;
+    border-radius: 30px;
+    position: relative;
+    right: 1px;
+  }
+  .menu-settings-links a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size:1em;
+    font-family: 'Roboto';
+  }
+  .menu-settings-links:hover{
+    background: #353535;transition: 1s;
+    border-radius: 5px;
+    border: 0px;
+  }
    .Menu-links header{
     padding: 10px;
    }
    .Menu-links header h1{
-    color: red;
+    color: rgb(255, 255, 255);
     font-family: 'Roboto';
    }
    .Menu-links .menu-container{
-    background: #1a1a1a;
+
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    height: 100vh;
+  
    }
+   /* Menu left sidebar */
    .Menu-links .menu-container .menu-left-sidebar{
-    background-color: green;
-    width: 60%;
-    border-radius: 3px;
-   }
-   .Menu-links .menu-container .menu-right-sidebar{
-    background-color: rgb(23, 0, 128);
-    width: 32%;
+    background-color: rgb(0, 0, 0);
+    width: 65%;
     border-radius: 3px;
     position: relative;
-    top: 30px;
-    right: 10px;
+    top: 10px;
+    right: 28px;
    }
+   .Menu-links .menu-container .menu-left-sidebar .menu-search{
+    position: relative;
+    top: 10px;
+    left: 10px;
+   }
+   .Menu-links .menu-container .menu-left-sidebar .menu-search span i{
+    color: #d3d3d3;
+    position: relative;
+    left: 30px;
+}
+   .Menu-links .menu-container .menu-left-sidebar .menu-search input{
+    background: rgb(61, 61, 61);
+    border: 0px;
+    padding: 12px;
+    border-radius:30px;
+    width: 80%;
+    color: #d3d3d3;
+   }
+   .Menu-links .menu-container .menu-left-sidebar .menu-search input::placeholder{
+    color: #d3d3d3;
+    position: relative;
+    left: 18px;
+    font-weight: bolder;
+    font-size: 1.1em;
+   }
+   /* Menu Right Sidebar */
+   .Menu-links .menu-container .menu-right-sidebar{
+    background-color: rgb(0, 0, 0);
+    width: 37%;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    right: 15px;
+   }
+   
    .settings-menu{
     position: absolute;
     width: 90%;
