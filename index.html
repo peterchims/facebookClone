@@ -28,23 +28,49 @@
         </div>
         <div class="nav-right">
             <ul>
-            <li> <a href=""><i class="fas fa-th"></i></a></li>
+            <li> <a href="#"><i class="fas fa-th"></i></a></li>
             <li class="number"><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
-            <li><a href=""><i class="fas fa-bell"></i></a></li>
+            <li><a href="#"><i class="fas fa-bell"></i></a></li>
             </ul>
-           <div class="user-login online">
+           <div class="user-login online" onclick="settingsMenuToggle()">
             <a href="#"><i class="fa-solid fa-user-astronaut"></i></a>
            </div> 
         </div>
         <!-- Settings Menu -->
          <div class="settings-menu">
-            <div class="user-profile">
-                <i class="fa-solid fa-person"></i>
-                <div>
-                    <p> Profile Name</p>
-                    <a href="#"> See your Profile</a>
+            <div class="settings-menu-inner">
+                <div class="settings-user-profile">
+                    <i class="fa-solid fa-person"></i>
+                        <p> Profile Name</p>
+                        
                 </div>
+                <div class="profile-link">
+                    <a href="#" class="settings-ling"> See your Profile</a>
+                </div>
+                <hr class="hr-top" >
+                <hr class="hr-bottom">
+                <div class="settings-links">
+                    <i class="fa-solid fa-gear settings-icons" id="settings-icon"></i>
+                        <a href="#">Setting & Privacy <i class="fa-solid fa-chevron-right settings-nav"></i> </a>
+                    </div>
+                    <div class="settings-links settings-help">
+                        <i class="fa-solid fa-question settings-icons"></i>
+                            <a href="#">Help & Support <i class="fa-solid fa-chevron-right settings-nav"></i> </a>
+                        </div>
+                        <div class="settings-links settings-help-1">
+                            <i class="fa-solid fa-moon settings-icons"></i>
+                                <a href="#">Display & Accessibility <i class="fa-solid fa-chevron-right settings-nav"></i> </a>
+                            </div>
+                            <div class="settings-links settings-help-2">
+                                <i class="fa-regular fa-message settings-icons" id="settings-icon"></i>
+                                    <a href="#"> Give Feedback<i class="fa-solid fa-chevron-right settings-nav"></i> </a>
+                                </div>
+                            <div class="settings-links settings-help-3">
+                                <i class="fa-solid fa-arrow-right-from-bracket settings-icons"></i>
+                                    <a href="#"> Logout <i class="fa-solid fa-chevron-right settings-nav"></i>  </a>
+                                </div>
             </div>
+        
          </div>
      </nav> <!--End of Navigation  -->
 
@@ -370,6 +396,6 @@
             <p> Wisdom Judah</p>
         </div>
     </div>
-     <script src="https://kit.fontawesome.com/ddf008a47b.js" crossorigin="anonymous"></script>
+     <script src="./js/index.js"></script>
 </body>
 </html>
