@@ -3,25 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Section Example</title>
+    <title>Facebook Search Bar</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-zdFYD1j+Z7Xwrz3EhQ3IKPD2prMtkVpHd0zSGkt1XuWv4w9T91I2q88du1Tm0jwM6eXQilj7uLz4ZzolbM88EQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
-    section {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    /* Basic styling for the search bar */
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Initial width */
+    transition: width 0.3s;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.search-input.active {
+    width: 400px; /* Expanded width */
+}
+
+.search-icons {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.search-icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.search-icons button i {
+    color: #888;
+    transition: color 0.3s;
+}
+
+.search-icons button:hover i {
+    color: #333;
+}
+
+.search-results {
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    z-index: 10;
+}
+
+.search-results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-results ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-results ul li:hover {
+    background-color: #f0f2f5;
+}
+
 </style>
 </head>
-<body>
-    <button id="toggleButton">Show Section</button>
-    <section id="mySection" style="display: none;">
-        <h2>This is the section</h2>
-        <p>Here is some content in the section.</p>
-    </section>
-    <script src="./test.js">
-  
-    </script>
+<div class="search-container">
+    <div class="search-input">
+        <input type="text" id="searchInput" placeholder="Search Facebook">
+        <div class="search-icons">
+            <button><i class="fas fa-search"></i></button>
+            <button><i class="fas fa-users"></i></button>
+            <button><i class="fas fa-bell"></i></button>
+        </div>
+    </div>
+    <div id="searchResults" class="search-results">
+        <!-- Results will be populated dynamically -->
+    </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>

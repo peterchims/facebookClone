@@ -289,7 +289,7 @@ color:#fff;
     top: 1px;
    }
    .menu-left-section h3{
-    color: #fff;
+    color: rgb(189, 179, 179);
     position: relative;
     bottom: 10px;
     left: 35px;
@@ -298,7 +298,7 @@ color:#fff;
     font-family: 'Roboto';
    }
    .menu-left-section p{
-    color: #fff;
+    color: rgb(224, 224, 224);
     position: relative;
     top: 25px;
     right: 10px;
@@ -311,13 +311,14 @@ color:#fff;
    .frd h3{
     position: relative;
     left: 30px;
+    color: rgb(189, 179, 179);
    }
    .frd p{
     position: relative;
     top: 10px;
     right: 10px;
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(224, 224, 224);
    }
    .grp{
     position: relative;
@@ -326,17 +327,19 @@ color:#fff;
    .grp{
     position: relative;
     top: 100px;
+
    }
    .grp h3{
     position: relative;
     left: 30px;
+    color: rgb(189, 179, 179);
    }
    .grp p{
     position: relative;
     top: 20px;
     right: 10px;
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(224, 224, 224);
    }
    .Nfd{
     position: relative;
@@ -347,13 +350,14 @@ color:#fff;
     position: relative;
     left: 40px;
     width: 45%;
+    color: rgb(189, 179, 179);
    }
    .Nfd p{
     position: relative;
     top: 20px;
     right: 35px;
     width:180%;
-    color: rgb(255, 255, 255);
+    color: rgb(224, 224, 224);
    }
    .feed{
     position: relative;
@@ -401,8 +405,7 @@ color:#fff;
     right: 15px;
     height: 55vh;
     top: 0; /* Position relative to the viewport */
-    position: -webkit-sticky;
-    position: sticky;
+   /* position: fixed; */
    }
    
    .settings-menu{
@@ -573,11 +576,14 @@ color:#fff;
 
    /* Container */
    .container {
+    /* position: fixed; */
     display: flex;
     justify-content: space-between; 
     background-color: #131313;
    }
-
+/* .fixed-left{
+    position: sticky;
+} */
 .left-sidebar {
     /* position: fixed; */
     width: 15%; 
