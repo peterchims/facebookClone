@@ -26,26 +26,60 @@
             <li><a href=""><i class="fas fa-gamepad"></i></a></li>
             </ul>
         </div>
-        <div class="nav-right">
-            <ul>
-            <li> <a href="#"><i class="fas fa-th"></i></a></li>
+        <div class="nav-right">     
+                <div class="user-login user-toggle" onclick="menuSettingsToggle()" id="nav-user-toggle">
+                    <a href="#"><i class="fas fa-th"></i></a>
+                   </div>
+                   <ul>
             <li class="number"><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
             <li><a href="#"><i class="fas fa-bell"></i></a></li>
             </ul>
-           <div class="user-login online" onclick="settingsMenuToggle()">
+           <div class="user-login online" onclick="settingsMenuToggle()" id="profile-opt">
             <a href="#"><i class="fa-solid fa-user-astronaut"></i></a>
            </div> 
         </div>
-        <div class="Menu-links">
+        <div class="Menu-links" id="menu-section">
     <header>
         <h1>Menu</h1>
     </header>
-    <div class="menu-container">
+    <div class="menu-container" id="menu-Section">
         <div class="menu-left-sidebar">
         <div class="menu-search">
            <span><i class="fa-solid fa-magnifying-glass"></i></span>
             <input type="text" name="" id="" placeholder="Search Menu">
-        </div>       
+        </div> 
+        <h1> Socials</h1>
+        <div class="menu-left-section">
+            <span><i class="fa-solid fa-calendar-xmark"></i></span>
+            <h3> Events </h3>
+            <p> Organize or find events and other things to do online and nearby.</p>
+        </div>
+        <div class="menu-left-section frd">
+            <span><i class="fa-solid fa-user-group" style="color: #21a1f7;"></i></span>
+            <h3> Friends </h3>
+            <p> Search for friends or people you may know.</p>
+        </div>
+        <div class="menu-left-section grp">
+            <span><i class="fa-solid fa-people-group" style="color: #bef721;"></i></span>
+            <h3> Groups </h3>
+            <p> Connect with people who share your interests.</p>
+        </div>
+        <div class="menu-left-section Nfd">
+            <span><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i></span>
+            <h3> News Feed </h3>
+            <p> See relevant posts from people and pages you follow.</p>
+        </div>
+        <div class="menu-left-section feed">
+            <span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #f77021;"></i></span>
+            <h3> Feeds</h3>
+            <p> See the most recent posts from your friends, groups, Pages and more.</p>
+        </div>
+        <div class="menu-left-section page">
+            <span><i class="fa-solid fa-flag "></i></span>
+            <h3> Pages</h3>
+            <p> Discover and connect with businesses on Facebook.</p>
+        </div>
+        <hr class="left-divider"/>
         </div>
                 <div class="menu-right-sidebar">
             <header>
@@ -55,40 +89,40 @@
                 <i class="fa-regular fa-pen-to-square menu-icons" id="menu-icon"></i>
                     <a href="#">Post </a>
                 </div>
-                <div class="menu-settings-links">
+                <div class="menu-settings-links" id="story">
                     <i class="fa-solid fa-book-open menu-icons"></i>  
                     <a href="#"> Story </a>   
                 </div>
-                    <div class="menu-settings-links">
+                    <div class="menu-settings-links" id="reels">
                         <i class="fa-solid fa-clapperboard menu-icons"></i>
                             <a href="#">Reels </a>
                         </div>
-                        <div class="menu-settings-links">
+                        <div class="menu-settings-links" id="live">
                             <i class="fa-regular fa-sun menu-icons"></i>
                             <a href="#"> Live Events</a>   
                         </div>
-                        <hr>
-                        <div class="menu-settings-links">
+                        <hr class="divider">
+                        <div class="menu-settings-links" id="page">
+                            
                             <i class="fa-regular fa-pen-to-square menu-icons" id="menu-icon"></i>
                                 <a href="#">Page </a>
                             </div>
-                            <div class="menu-settings-links">
-                                <i class="fa-solid fa-book-open menu-icons"></i>  
-                                <a href="#"> Ad </a>   
+                            <div class="menu-settings-links" id="ads">
+                                <i class="fa-solid fa-bullhorn menu-icons"></i>
+                                 <a href="#"> Ad </a>   
                             </div>
-                                <div class="menu-settings-links">
-                                    <i class="fa-solid fa-clapperboard menu-icons"></i>
+                                <div class="menu-settings-links" id="grp">
+                                    <i class="fa-solid fa-users-line menu-icons"></i>
                                         <a href="#">Group</a>
                                     </div>
-                                    <div class="menu-settings-links">
-                                        <i class="fa-solid fa-clapperboard menu-icons"></i>
+                                    <div class="menu-settings-links" id="evt">
+                                        <i class="fa-regular fa-calendar menu-icons"></i>
                                             <a href="#">Event</a>
                                         </div>
-                                        <div class="menu-settings-links">
-                                            <i class="fa-solid fa-clapperboard menu-icons"></i>
+                                        <div class="menu-settings-links" id="mkt">
+                                            <i class="fa-solid fa-store menu-icons"></i>
                                                 <a href="#">Marketplace Listing</a>
-                                            </div>
-                           
+                                            </div>                       
     </div>   
           </div>
         <!-- Settings Menu -->

@@ -128,20 +128,21 @@ color:#fff;
    }
    .Menu-links{
     position: absolute;
-    width: 60%;
-    max-width: 500px;
-    height: 450x;
-    padding-bottom: 40px;
+    width: 70%;
+    max-width: 650px;
+    height: 900px;
     background: #383737;
-    /* background: #818181; */
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     border-radius: 4px;
-    overflow: hidden;
+    overflow:hidden;
     top: 80px;
     right: 1%;
-    z-index: 2;
-    max-height: 500;
+    z-index: 1;
+    max-height: 0px;
     transition: max-height 0.3s;
+   }
+   .menu-settings-height{
+    max-height: 1200px; 
    }
    .menu-container{
     padding-left: 40px;
@@ -152,11 +153,54 @@ color:#fff;
     padding: 17px;
     margin-bottom: 0px;
   }
+  #story{
+    position: relative;
+    bottom: 20px;
+  }
+  #reels{
+    position: relative;
+    bottom: 40px;
+    left: 1px;
+  }
+  #live{
+    position: relative;
+    bottom: 60px;
+    left: 5px;
+  }
+  .divider{
+    position: relative;
+    bottom: 80px;
+  }
+  #page{
+    position: relative;
+    bottom: 90px;
+    right: -12px;
+  }
+  #ads{
+    position: relative;
+    bottom: 110px;
+    right: -15px;
+  }
+  #grp{
+    position: relative;
+    bottom: 130px;
+    left: 18px;
+  }
+  #evt{
+    position: relative;
+    bottom: 150px;
+    left: 20px;
+  }
+  #mkt{
+    position: relative;
+    bottom: 170px;
+    left: 20px;
+  }
   .menu-icons{
     background-color: rgb(240, 240, 240);
     color: rgb(3, 3, 3);
-    font-size:1em;
-    padding: 10px;
+    font-size:0.9em;
+    padding: 8px;
     border-radius: 30px;
     position: relative;
     right: 1px;
@@ -165,13 +209,16 @@ color:#fff;
     color:rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bolder;
-    font-size:1em;
+    font-size:0.9em;
     font-family: 'Roboto';
+    padding:2px;
   }
   .menu-settings-links:hover{
-    background: #353535;transition: 1s;
+    background: #353535;
+    transition: 1s;
     border-radius: 5px;
     border: 0px;
+    padding: px;
   }
    .Menu-links header{
     padding: 10px;
@@ -181,19 +228,18 @@ color:#fff;
     font-family: 'Roboto';
    }
    .Menu-links .menu-container{
-
     display: flex;
     justify-content: space-between;
-  
    }
    /* Menu left sidebar */
    .Menu-links .menu-container .menu-left-sidebar{
     background-color: rgb(0, 0, 0);
-    width: 65%;
+    width: 125%;
     border-radius: 3px;
     position: relative;
     top: 10px;
     right: 28px;
+    height: 190vh;
    }
    .Menu-links .menu-container .menu-left-sidebar .menu-search{
     position: relative;
@@ -220,14 +266,143 @@ color:#fff;
     font-weight: bolder;
     font-size: 1.1em;
    }
+   .menu-left-sidebar h1 {
+    color: rgb(250, 250, 250);
+    position: relative;
+    left:10px;
+    top:20px;
+    font-size: 16px;
+    font-family: 'Roboto';
+   }
+   .menu-left-section{
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .menu-left-section i{
+    font-size: 25px;
+    color:#d43543;
+    position: relative;
+    left: 20px;
+    top: 1px;
+   }
+   .menu-left-section h3{
+    color: #fff;
+    position: relative;
+    bottom: 10px;
+    left: 35px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Roboto';
+   }
+   .menu-left-section p{
+    color: #fff;
+    position: relative;
+    top: 25px;
+    right: 10px;
+    font-weight: bolder;
+   }
+   .frd{
+    position: relative;
+    top: 80px;
+   }
+   .frd h3{
+    position: relative;
+    left: 30px;
+   }
+   .frd p{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+   }
+   .grp{
+    position: relative;
+    top: 105px;
+   }
+   .grp{
+    position: relative;
+    top: 100px;
+   }
+   .grp h3{
+    position: relative;
+    left: 30px;
+   }
+   .grp p{
+    position: relative;
+    top: 20px;
+    right: 10px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+   }
+   .Nfd{
+    position: relative;
+    top: 130px;
+    left: 10px;
+   }
+   .Nfd h3{
+    position: relative;
+    left: 40px;
+    width: 45%;
+   }
+   .Nfd p{
+    position: relative;
+    top: 20px;
+    right: 35px;
+    width:180%;
+    color: rgb(255, 255, 255);
+   }
+   .feed{
+    position: relative;
+    top: 160px;
+   }
+   .feed h3{
+    position: relative;
+    left: 40px;
+    /* width: 45%; */
+   }
+   .feed p{
+    position: relative;
+    top: 20px;
+   left: 8px;
+    width:180%;
+    color: rgb(255, 255, 255);
+   }
+   .page{
+    position: relative;
+    top: 200px;
+   }
+   .page h3{
+    position: relative;
+    left: 40px;
+    /* width: 45%; */
+   }
+   .page p{
+    position: relative;
+    top: 20px;
+   left: 5px;
+    width:180%;
+    color: rgb(255, 255, 255);
+   }
+   .left-divider{
+    position: relative;
+    top: 210px;
+   }
    /* Menu Right Sidebar */
    .Menu-links .menu-container .menu-right-sidebar{
     background-color: rgb(0, 0, 0);
-    width: 37%;
+    width: 60%;
     border-radius: 5px;
     position: relative;
     top: 10px;
     right: 15px;
+    height: 55vh;
+    top: 0; /* Position relative to the viewport */
+    position: -webkit-sticky;
+    position: sticky;
    }
    
    .settings-menu{
@@ -328,7 +503,6 @@ color:#fff;
         border-radius: 30px;
         position: relative;
         right: 10px;
-
       }
       .settings-nav {
         position: relative;
@@ -345,13 +519,11 @@ color:#fff;
       .settings-help-2{
         position: relative;
         bottom: 160px;
-    
       }
       .settings-help-3{
         position: relative;
         bottom: 200px;
       }
-
       .settings-links a{
         display: flex;
         flex: 1;
@@ -372,6 +544,11 @@ color:#fff;
     position: absolute;
     right:8px;
 
+}
+.user-toggle{
+    background: #9a9a9a;
+    position: relative;
+    right: 60px;
 }
 .user-login  a{
     text-decoration: none;
